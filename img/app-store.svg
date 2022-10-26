@@ -1,0 +1,40 @@
+<svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.8696 15.9606C19.8453 12.3439 22.8317 10.5719 22.9774 10.4991C21.2778 8.02325 18.6557 7.68343 17.7087 7.65915C15.4993 7.41642 13.3627 8.99418 12.2216 8.99418C11.0804 8.99418 9.33231 7.68343 7.46278 7.73197C5.05911 7.78052 2.80111 9.16409 1.56285 11.3244C-0.986502 15.7421 0.907302 22.223 3.35954 25.7669C4.57351 27.5146 6.00601 29.4564 7.87553 29.3836C9.6965 29.3108 10.3763 28.2185 12.5858 28.2185C14.7709 28.2185 15.4022 29.3836 17.3203 29.335C19.2869 29.3108 20.5252 27.5874 21.6906 25.8154C23.0988 23.825 23.6572 21.8347 23.6815 21.7376C23.6815 21.7376 19.9182 20.3054 19.8696 15.9606ZM16.2763 5.30466C17.2474 4.06673 17.9273 2.41616 17.733 0.717041C16.3005 0.78986 14.5281 1.71224 13.5084 2.90162C12.61 3.96964 11.7845 5.69303 12.0031 7.31933C13.6055 7.4407 15.2565 6.51832 16.2763 5.30466Z" fill="white"/>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></svg>

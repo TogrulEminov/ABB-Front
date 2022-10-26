@@ -1,0 +1,26 @@
+#section-chatbox{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 100;
+ }
+ .chat-message{
+     background-color: #135996;
+     width: 54px;
+     height: 54px;
+     border-radius: 54px;
+     text-align: center;
+     cursor: pointer;
+ }
+ .chat-message img{
+     padding: 13px 0;
+ }
+
+ 
+ @media (max-width: 991px) {
+    #section-chatbox{
+        position: fixed;
+        bottom: 20px;
+       
+     }
+}

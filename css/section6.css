@@ -1,0 +1,131 @@
+.section-6-background {
+    background: url("/img/t_banner.png") center/cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 48px 0;
+}
+
+.section-6-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 4px 0;
+}
+
+.section-6-info {
+    margin-left: 48px;
+    padding: 8px 0;
+}
+
+.section-6-info p {
+    width: 100%;
+    line-height: 43px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 16px;
+    margin-bottom: 48px;
+}
+
+.more-about {
+    display: flex;
+    align-items: center;
+    transition: all .4s ease;
+}
+
+.more-about span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.more-about:hover {
+    opacity: .5;
+}
+
+.more-about img {
+    height: 16px;
+    padding-left: 18px;
+    filter: invert(100%) sepia(93%) saturate(33%) hue-rotate(206deg) brightness(107%) contrast(100%);
+}
+
+  
+@media(min-width: 769px) and (max-width: 991px) {
+    .section-6-background {
+        border-radius: 10px;
+        padding: 24px 0;
+    }
+
+    .section-6-info p {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 600;
+        width: 90%;
+        color: #fff;
+        padding-bottom: 8px;
+        margin-bottom: 24px;
+    }
+
+    .more-about span {
+        font-size: 13px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .more-about img {
+        height: 13px;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+    .section-6-background {
+        border-radius: 0;
+        padding: 24px 0;
+    }
+
+    .section-6-info p {
+        width: 90%;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 8px;
+        margin-bottom: 24px;
+    }
+
+    .more-about span {
+        font-size: 13px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .more-about img {
+        height: 13px;
+    }
+}
+@media(max-width: 575px) {
+    .section-6-background {
+        border-radius: 0;
+        padding: 24px 0;
+        margin: 0 -15px;
+    }
+
+    .section-6-info p {
+        font-size: 13px;
+        width: 90%;
+        line-height: 18px;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 8px;
+        margin-bottom: 24px;
+    }
+
+    .more-about span {
+        font-size: 13px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .more-about img {
+        height: 13px;
+    }
+}
